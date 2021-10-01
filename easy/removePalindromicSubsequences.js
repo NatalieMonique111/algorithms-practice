@@ -29,7 +29,7 @@
 // Constraints:
 // 1 <= s.length <= 1000
 // s[i] is either 'a' or 'b'.
-
+var removePalindromeSub = function(s) {
 // check if the string is empty, then no steps needed
 if (s.length === 0) {
   return 0;
@@ -41,3 +41,4 @@ if(revS === s) {
 }
 // in all other cases we can remove all "a" in step one, and then remove "b" in step 2
 return 2;
+};
