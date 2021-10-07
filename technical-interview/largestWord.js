@@ -19,3 +19,19 @@ console.log(largestWord(`Which word in the string will be the longest?`));
 //→ ‘longest’
 console.log(largestWord(`I love JavaScript, even though it’s challenging`));
 // → ‘challenging’ 
+
+////////////////////////////////////////
+
+let largestWord = (str) => {
+  var largest = '';
+  for (const word of str.split(' ')) {
+    if (word.length > largest.length) {
+      largest = word;
+    }
+
+}  
+return largest;
+}
+
+console.log(largestWord(`Which word in the string will be the longest?`)); 
+//→ ‘longest’

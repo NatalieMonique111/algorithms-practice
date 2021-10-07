@@ -2,6 +2,14 @@
 // The value of n will be a valid index of a char in the original string 
 // (i.e. n will be in the range 0..len(str)-1 inclusive).
 
+//////////With BUILT-IN METHOD/DECLARATIVE/////////
+function missing_char(str, n){
+  let char= str.charAt(n);
+  return str.replace(char,"");
+  
+ }
+ 
+///////////IMPERATIVE//////////
 
 function missing_char(str,n){
   let result = "";
