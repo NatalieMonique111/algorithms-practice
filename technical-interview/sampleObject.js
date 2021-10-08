@@ -5,11 +5,11 @@ let techtonica = {
   favoriteLanguage : "Your favorite language", 
   cohortNumber : 3 
   };
-  
-  delete techtonica.cohortNumber;
-  console.log(techtonica)
-  //Output Example: 
-  // sampleObject()
-  //  { 
-  // studentName : "Your Name", 
-  // favoriteLanguage : "Your favorite language", };
+
+  function sampleObject(obj){
+    delete obj.cohortNumber;
+     return obj;
+  }
+
+
+  console.log(sampleObject(techtonica));

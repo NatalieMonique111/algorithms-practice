@@ -23,13 +23,13 @@ console.log(largestWord(`I love JavaScript, even though it’s challenging`));
 ////////////////////////////////////////
 
 let largestWord = (str) => {
-  var largest = '';
-  for (const word of str.split(' ')) {
+  let strSplit = str.split(' ');
+  let largest = '';
+  for (const word of strSplit) {
     if (word.length > largest.length) {
       largest = word;
     }
-
-}  
+  }  
 return largest;
 }
 
