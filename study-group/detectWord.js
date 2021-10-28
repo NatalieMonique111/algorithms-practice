@@ -1,4 +1,5 @@
-//A word is on the loose and now has tried to hide amongst a crowd of tall letters! Help write a function to detect what the word is, knowing the following rules:
+//A word is on the loose and now has tried to hide amongst a crowd of tall letters!
+//Help write a function to detect what the word is, knowing the following rules:
 
 //////////////////////Imperative/////////////
 
