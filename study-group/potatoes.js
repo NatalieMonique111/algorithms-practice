@@ -39,3 +39,78 @@ function howManyPotatos(str, thingToMatch) {
 //test cases
 console.log(howManyPotatos("potatoapple", "potato")); // -> 1
 console.log(howManyPotatos("potato12potato", "potato")); // -> 2
+
+// SIMPLE VERSION with REGEX  - no special character filter ////////
+
+function potatoes(str) {
+  // if the str is empty, then this is the fail fast method
+  //BUT:  almost unnecessary because the count starts at zero,
+  //and if the string is empty, then it is zero, but good to
+  //put it in there to show that you are thinking of edge cases
+
+  if (!str) {
+    return "Please enter some characters into your string.  Thank you!";
+    // return 0 you could also return a 0
+  }
+
+  // create a counter set to zero to track the number of potatoes
+
+  let numberofPotatoes = 0;
+
+  // use RegEx to create an array with the number of potato it finds
+
+  let potatoString = str.match(/potato/g);
+
+  //loop through the array to collect a count of the occurrences of potato
+  //and adding to the counter each time potato is encountered in the array
+
+  for (let i = 0; i < potatoString.length; i++) {
+    if (potatoString[i] === "potato") {
+      numberofPotatoes++;
+    }
+  }
+  return numberofPotatoes;
+}
+
+console.log("expected result: >> 1 ", potatoes("potato"));
+console.log("expected result: >> 2 ", potatoes("potatopotato"));
+console.log("expected result: >> 3 ", potatoes("potatopotatopotatopot"));
+console.log("expected result: >> message. ", potatoes(""));
+
+// MORE COMPLEX VERSION with REGEX - no special character filter ////////
+
+function potatoes(str) {
+  // if the str is empty, then this is the fail fast method
+  //BUT:  almost unnecessary because the count starts at zero,
+  //and if the string is empty, then it is zero, but good to
+  //put it in there to show that you are thinking of edge cases
+
+  if (!str) {
+    return "Please enter some characters into your string.  Thank you!";
+    // return 0 you could also return a 0
+  }
+
+  // create a counter set to zero to track the number of potatoes
+
+  let numberofPotatoes = 0;
+
+  //use RegEx to filter out all non-letters, then create an array with the number of potato it finds
+
+  let potatoString = str.replace(/[^a-zA-Z]/g, "").match(/potato/g);
+
+  //loop through the array to collect a count of the occurrences of potato
+  //and adding to the counter each time potato is encountered in the array
+
+  for (let i = 0; i < potatoString.length; i++) {
+    if (potatoString[i] === "potato") {
+      numberofPotatoes++;
+    }
+  }
+  return numberofPotatoes;
+}
+
+console.log("expected result: >> 1 ", potatoes("potato"));
+console.log("expected result: >> 2 ", potatoes("potatopotato"));
+console.log("expected result: >> 3 ", potatoes("potatopotatopotatopot"));
+console.log("expected result: >> message. ", potatoes(""));
+console.log("expected result: >> 2 ", potatoes("pot3at4opotatasop2otatop%&ot"));
