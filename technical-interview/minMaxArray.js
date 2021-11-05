@@ -14,5 +14,5 @@ function minMax(arr) {
   return [sorted[0], sorted[sorted.length - 1]];
 }
 console.log(minMax([1, 2, 3, 4, 5])); // [1,5]
-console.log(minMax([23334454, 5]));
-console.log(minMax([1]));
+console.log(minMax([23334454, 5])); //[5, 2334454]
+console.log(minMax([1])); //[1, 1]
