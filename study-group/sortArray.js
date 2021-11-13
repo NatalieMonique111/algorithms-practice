@@ -1,4 +1,4 @@
-//Sort an Array of Numbers in descending order
+//Sort an Array of Numbers in descending order.
 
 const sortArray = (array) => {
   return array.sort(function (a, b) {
@@ -7,7 +7,7 @@ const sortArray = (array) => {
 };
 console.log("result", sortArray([4.5, 70, -9, 100]));
 
-//Sort an Array of Numbers in ascending order
+//Sort an Array of Numbers in ascending order.
 
 const sortArray = (array) => {
   return array.sort(function (a, b) {
