@@ -22,8 +22,8 @@ console.log(
 
 ////////////// BUILT-IN METHOD ////////////////////
 
-// function reverseArray(arr) {
-//  return arr.reverse();
-// }
+function reverseArray(arr) {
+  return arr.reverse();
+}
 
-// console.log("expected result:  >>", reverseArray([1, 2, 3, 4, 5, -1, 'a']));
+console.log("expected result:  >>", reverseArray([1, 2, 3, 4, 5, -1, "a"]));

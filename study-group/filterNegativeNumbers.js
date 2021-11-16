@@ -9,7 +9,7 @@
 function filterNegativeNums(arr) {
   //use filter method
   // return that array
-  const result = arr.filter((arr) => arr > 0);
+  const result = arr.filter((el) => el > 0);
   return result;
 }
 
