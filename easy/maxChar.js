@@ -39,3 +39,30 @@ function getMaxChar(str) {
 }
 
 console.log(getMaxChar("dogg"));
+
+/////////////Without comments////////////
+
+function getMaxChar(str) {
+  let charMap = {};
+  let charCount = 0;
+  let maxChar = "";
+
+  for (let char of str) {
+    if (charMap[char]) {
+      charMap[char]++;
+    } else {
+      charMap[char] = 1;
+    }
+  }
+
+  for (let char in charMap) {
+    if (charMap[char] > charCount) {
+      charCount = charMap[char];
+
+      maxChar = char;
+    }
+  }
+  return maxChar;
+}
+
+console.log(getMaxChar("dogg"));
