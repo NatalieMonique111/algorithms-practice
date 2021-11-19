@@ -113,4 +113,4 @@ https://www.geeksforgeeks.org/reverse-vowels-given-string/
    
    // output for snippet
    console.log( `${original}->`,result);
-   
+   //James Bond-> Jomes Band
