@@ -1,8 +1,8 @@
-//string 
+//Count the number of "char" in the given string
 
 function countChars(str, char) {
-  let counter = 0; 
-  for (let i = 0; i < str.length; i++){
+  let counter = 0;
+  for (let i = 0; i < str.length; i++) {
     if (str[i] === char) {
       counter += 1;
     }
@@ -10,4 +10,4 @@ function countChars(str, char) {
   return counter;
 }
 
-console.log(countChars('haha', 'a'));
+console.log(countChars("haha", "a"));
