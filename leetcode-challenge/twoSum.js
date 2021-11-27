@@ -39,14 +39,20 @@ var twoSum = function (nums, targetSum) {
   }
 };
 
-/////////////////Alternate solutions, more optimal///////////////
+/////////////////Alternate solution///////////////
+
 const twoSum = function (nums, target) {
   const store = {};
   for (let i = 0; i < nums.length; i++) {
     if (store[nums[i]] >= 0) {
       return [store[nums[i]], i];
     } else {
-      store[target - nums[i]] = i;
+      //updates the store object with the needed value and creates new property (key : value)
+      store[target - nums[i]] = i; //the needed value -> the key & index -> the value  { 7:0 }
     }
   }
 };
+
+twoSum([2, 7, 11, 15], 9); // expects [0,1]
+
+//Note: helpful Youtube video: https://www.youtube.com/watch?v=_CoCO62fn_E
