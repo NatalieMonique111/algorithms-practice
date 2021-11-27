@@ -25,16 +25,16 @@
 // -109 <= target <= 109
 // Only one valid answer exists.
 
-var twoSum = function (nums, target) {
+var twoSum = function (nums, targetSum) {
   const store = {};
   for (let i = 0; i < nums.length; i++) {
-    let current = nums[i]; //current index
-    let x = target - current; // current + x = target ->is a solution
-    if (store[current] !== undefined) {
-      return [store[current], i];
+    let currentValue = nums[i]; //current index value (number)
+    let neededValue = targetSum - currentValue; // currentValue + neededValue = targetSum *solution*
+    if (store[currentValue] !== undefined) {
+      return [store[currentValue], i];
       // Set x to current index in store
     } else {
-      store[x] = i;
+      store[neededValue] = i;
     }
   }
 };
