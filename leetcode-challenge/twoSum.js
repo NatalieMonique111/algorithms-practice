@@ -32,7 +32,6 @@ var twoSum = function (nums, targetSum) {
     let neededValue = targetSum - currentValue; // currentValue + neededValue = targetSum *solution*
     if (store[currentValue] !== undefined) {
       return [store[currentValue], i];
-      // set neededValue to the current index in the store
     } else {
       store[neededValue] = i;
     }
