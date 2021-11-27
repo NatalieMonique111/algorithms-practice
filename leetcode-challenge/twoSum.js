@@ -28,11 +28,25 @@
 var twoSum = function (nums, target) {
   const store = {};
   for (let i = 0; i < nums.length; i++) {
-    let cur = nums[i];
-    let diff = target - cur;
-    // Return answer if the current number was a diff from a previous number
-    if (store[cur] !== undefined) return [store[cur], i];
-    // Set diff to current index in store
-    else store[diff] = i;
+    let current = nums[i]; //current index
+    let x = target - current; // current + x = target ->is a solution
+    if (store[current] !== undefined) {
+      return [store[current], i];
+      // Set x to current index in store
+    } else {
+      store[x] = i;
+    }
+  }
+};
+
+/////////////////Alternate solutions, more optimal///////////////
+const twoSum = function (nums, target) {
+  const comp = {};
+  for (let i = 0; i < nums.length; i++) {
+    if (comp[nums[i]] >= 0) {
+      return [comp[nums[i]], i];
+    } else {
+      comp[target - nums[i]] = i;
+    }
   }
 };
