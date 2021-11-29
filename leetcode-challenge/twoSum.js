@@ -37,6 +37,7 @@ var twoSum = function (nums, targetSum) {
     }
   }
 };
+//note: If that property exists, the result is the value it points to. If that property doesn’t exist, the result is undefined.
 
 /////////////////Alternate solution///////////////
 
@@ -46,7 +47,7 @@ const twoSum = function (nums, target) {
     if (store[nums[i]] >= 0) {
       return [store[nums[i]], i];
     } else {
-      //updates the store object with the needed value and creates new property (key : value)
+      //modifies/updates the store object with a new property (key : value), assigns value.
       store[target - nums[i]] = i; //the needed value -> the key & index -> the value  { 7:0 }
     }
   }
