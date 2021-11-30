@@ -40,7 +40,7 @@ var twoSum = function (nums, targetSum) {
 //note: If that property exists, the result is the value it points to. If that property doesn’t exist, the result is undefined.
 
 /////////////////Alternate solution///////////////
-
+//{ 7:0 }
 const twoSum = function (nums, target) {
   const store = {};
   for (let i = 0; i < nums.length; i++) {
@@ -54,5 +54,5 @@ const twoSum = function (nums, target) {
 };
 
 twoSum([2, 7, 11, 15], 9); // expects [0,1]
-
+//Input: nums = [2,7,11,15], target = 9
 //Note: helpful Youtube video: https://www.youtube.com/watch?v=_CoCO62fn_E
