@@ -9,25 +9,19 @@ const vowelDictionary = (arr) => {
     u: -1,
     y: [],
   };
-
   let counter = {};
-
   const added = arr.forEach((letter) => {
-    // do something to each item
-    //if the letter is in vowel_obj then...
+    //loops through array
     if (letter in VOWEL_OBJ) {
-      // O(1)
-      //then if letter in the counter... if not go to else {}
+      //if letter is vowel, proceed. if letter is in hashmap, proceed.
+      //if not, go to else {}
       if (letter in counter) {
-        let currentCount = counter[letter];
-        // console.log(counter)
-        counter[letter] = currentCount + 1;
-        //  console.log(letter + currentCount)
+        let currentCount = counter[letter]; //assigns value to variable
+        counter[letter] = currentCount + 1; //increments
       } else {
-        //initlizes counter
-        counter[letter] = 0;
-        //add 1 to the counter if letter is not in the counter
-        counter[letter] += 1;
+        //initlizes counter aka initially populates the hashmap
+        counter[letter] = 0; // {a:0}
+        counter[letter] += 1; //{a:1}  //adds letter as key, assigns value of 1
       }
     }
   });
@@ -35,4 +29,9 @@ const vowelDictionary = (arr) => {
 };
 
 vowelDictionary(["a", "b", "e", "d", "e", "f", "u", "i", "x", "a"]);
-// expects { a: 2, e: 2, u: 1, i: 1 }
+
+//notes:
+//  let counter = {a:2, e:2, u:1, i:1 }   initial value is empty hashmap
+// letter = "a"
+//let currentCount = 1;
+//count[letter] = (currentCount = 1) + 1
