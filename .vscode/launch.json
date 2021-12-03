@@ -1,0 +1,70 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Launch Beers",
+      "request": "launch",
+      "mainClass": "Beers",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
+      "name": "Launch DogTestDrive",
+      "request": "launch",
+      "mainClass": "DogTestDrive",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
+      "name": "Launch Exercise1b",
+      "request": "launch",
+      "mainClass": "Exercise1b",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
+      "name": "Launch FizzBuzz",
+      "request": "launch",
+      "mainClass": "FizzBuzz",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
+      "name": "Launch MyFirstApp",
+      "request": "launch",
+      "mainClass": "MyFirstApp",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
+      "name": "Launch PoolPuzzleOne",
+      "request": "launch",
+      "mainClass": "PoolPuzzleOne",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
+      "name": "Launch Shuffle1",
+      "request": "launch",
+      "mainClass": "Shuffle1",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
+      "name": "Launch TapeDeckTestDrive",
+      "request": "launch",
+      "mainClass": "TapeDeckTestDrive",
+      "projectName": "algorithms_aee1796c"
+    }
+  ]
+}
