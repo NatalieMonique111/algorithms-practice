@@ -32,3 +32,21 @@ console.log(whatScrabbleLetters("taco CAT")); // returns {t: 2, a: 2, c: 2}
 // problem 2:
 // given a word, and an object representing a scrabble 'hand', aka a list of tiles
 //  return true if that word can be made using those the scrabble tiles
+
+/////////////////string method////////////////
+
+function whatScrabbleLetters(word) {
+  let store = {}; //empty
+  //loop to iterate through the word string
+  for (let i = 0; i < word.length; i++) {
+    if (!store[word[i]]) {
+      console.log(store[word[i]]);
+      store[word[i]] = 1;
+    } else {
+      store[word[i]]++;
+    }
+  }
+  return store;
+}
+
+console.log(whatScrabbleLetters("apple"));
