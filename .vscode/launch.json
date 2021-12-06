@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch TestArray",
+      "request": "launch",
+      "mainClass": "TestArray",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
+      "name": "Launch Hobbits",
+      "request": "launch",
+      "mainClass": "Hobbits",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
+      "name": "Launch BooksTestDrive",
+      "request": "launch",
+      "mainClass": "BooksTestDrive",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
       "name": "Launch Current File",
       "request": "launch",
       "mainClass": "${file}"
