@@ -22,4 +22,7 @@ const maxRecurringChar = (str) => {
   //comparing d to a values and continues to compare it to the prevValue compared to nextValue
   return Object.keys(store).reduce((a, b) => (store[a] >= store[b] ? a : b));
 };
-console.log(maxRecurringChar("ddddaabbacada"));
+
+console.log(maxRecurringChar("ddddaabbacada")); //d
+console.log(maxRecurringChar("natalie")); //a
+console.log(maxRecurringChar("dogg")); //g
