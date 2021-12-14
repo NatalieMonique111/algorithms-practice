@@ -29,12 +29,12 @@ function maxCharWithMap(str) {
   const letters = new Map();
 
   // Create map of chars to count of how often it occurs, i.e. ['a', 1]
-  for (const s of str) {
-    if (letters.has(s)) {
-      const nextCnt = letters.get(s) + 1;
-      letters.set(s, nextCnt);
+  for (const char of str) {
+    if (letters.has(char)) {
+      const nextCnt = letters.get(char) + 1;
+      letters.set(char, nextCnt);
     } else {
-      letters.set(s, 1);
+      letters.set(char, 1);
     }
   }
 
