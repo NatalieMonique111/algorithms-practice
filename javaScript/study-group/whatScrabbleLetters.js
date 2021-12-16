@@ -40,7 +40,6 @@ function whatScrabbleLetters(word) {
   //loop to iterate through the word string
   for (let i = 0; i < word.length; i++) {
     if (!store[word[i]]) {
-      console.log(store[word[i]]);
       store[word[i]] = 1;
     } else {
       store[word[i]]++;
