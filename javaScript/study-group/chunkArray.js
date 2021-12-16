@@ -2,6 +2,7 @@
 // chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 5)
 // // should return [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13]]
 
+////////////////////Using Slice///////////////
 const chunkArray = (arr, chunkSize) => {
   const newChunkArray = [];
   for (let i = 0; i < arr.length; i += chunkSize) {
@@ -9,6 +10,18 @@ const chunkArray = (arr, chunkSize) => {
     newChunkArray.push(slicedArr);
   }
 
+  return newChunkArray;
+};
+chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 5);
+
+//////////////Using Splice////////////
+const chunkArray = (arr, chunkSize) => {
+  const newChunkArray = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    let slicedArr = arr.splice(0, chunkSize);
+    newChunkArray.push(slicedArr);
+  }
   return newChunkArray;
 };
 chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 5);
