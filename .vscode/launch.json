@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch HeapQuiz",
+      "request": "launch",
+      "mainClass": "HeapQuiz",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
+      "name": "Launch StaticTests",
+      "request": "launch",
+      "mainClass": "StaticTests",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
       "name": "Launch TestArray",
       "request": "launch",
       "mainClass": "TestArray",
