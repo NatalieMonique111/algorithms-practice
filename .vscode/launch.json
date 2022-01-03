@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch FullMoons",
+      "request": "launch",
+      "mainClass": "FullMoons",
+      "projectName": "algorithms_aee1796c"
+    },
+    {
+      "type": "java",
       "name": "Launch HeapQuiz",
       "request": "launch",
       "mainClass": "HeapQuiz",
