@@ -1,3 +1,4 @@
+package Head_First_Java;
 public class TestArray {
   public static void main(String [] args) {
     String [] islands = new String[4];

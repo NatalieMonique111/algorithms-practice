@@ -1,3 +1,4 @@
+package Head_First_Java;
 public class Beers {
   public static void main(String[] bottles) {
     // declare number of beers

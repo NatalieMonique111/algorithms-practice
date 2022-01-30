@@ -1,3 +1,4 @@
+package Head_First_Java;
 public class TapeDeck {
   //instance variable
   boolean canRecord = false;

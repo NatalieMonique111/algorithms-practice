@@ -1,3 +1,4 @@
+package Head_First_Java;
 public class Hobbits {
   
     String name;
