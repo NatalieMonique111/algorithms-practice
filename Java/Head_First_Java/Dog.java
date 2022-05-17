@@ -1,4 +1,4 @@
-package Head_First_Java;
+
 class Dog {
   int size;
   String breed;
